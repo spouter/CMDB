@@ -35,7 +35,6 @@ for i in tmplist:
     print '\t' + "MAC :" + '\t' + i["MAC"] 
     print '\t' + "IPAddress :" + '\t' + i["IPAddress"] 
     print '\t' + "IPSubnet :" + '\t' + i["IPSubnet"]
-
 for sys in womaiwh.Win32_OperatingSystem(): 
       print "\nVersion :\t%s" % sys.Caption.encode("GBK") 
       print "Vernum :\t%s" % sys.BuildNumber 

@@ -39,3 +39,8 @@ for i in tmplist:
 for sys in womaiwh.Win32_OperatingSystem(): 
       print "\nVersion :\t%s" % sys.Caption.encode("GBK") 
       print "Vernum :\t%s" % sys.BuildNumber 
+#bios
+for bios_id in womaiwh.Win32_BIOS():
+	encrypt_str = encrypt_str+bios_id.SerialNumber.strip()
+	print "bios number:", bios_id.SerialNumber.strip()
+	print "encrypt_str:", encrypt_str

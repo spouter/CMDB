@@ -44,3 +44,7 @@ for bios_id in womaiwh.Win32_BIOS():
 	encrypt_str = encrypt_str+bios_id.SerialNumber.strip()
 	print "bios number:", bios_id.SerialNumber.strip()
 	print "encrypt_str:", encrypt_str
+#BaseBoard
+for board_id in c.Win32_BaseBoard():
+	encrypt_str = encrypt_str+board_id.SerialNumber.strip()
+	print "main board id:",board_id.SerialNumber.strip()
